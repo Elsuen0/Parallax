@@ -1,12 +1,14 @@
 import React, { useEffect, useRef, useState } from "react";
 import styles from "./App.module.scss";
 import Test from "../BlocTest/Test";
+import Rellax from "rellax";
 
 const App = () => {
   const containerRef = useRef(null);
   const backgroundRef = useRef(null);
   const [containerHeight, setContainerHeight] = useState(100); // Hauteur initiale à 100vh
 
+  const relax = new Rellax(".mountains");
   useEffect(() => {
     const handleParallax = () => {
       const container = containerRef.current;
@@ -30,7 +32,7 @@ const App = () => {
       ref={containerRef}
       style={{ height: `${containerHeight}vh`, transition: "height 0.5s ease" }}
     >
-      <div className={styles.mountains}>
+      <div className={`${styles.mountains}`}>
         <img src="./Mountains.png" alt="" />
       </div>
       <div className={styles.background} ref={backgroundRef}>
