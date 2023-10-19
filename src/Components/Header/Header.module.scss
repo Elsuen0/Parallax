@@ -1,0 +1,61 @@
+.header {
+  position: fixed;
+  z-index: 3;
+  top: -40px;
+  width: 100%;
+  font-family: "Avenir LT Std", sans-serif;
+  animation: slideIn 1s ease forwards;
+  .headerIn {
+    display: flex;
+    height: 30px;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    position: relative;
+    .burger {
+      display: flex;
+      align-items: center;
+    }
+    .navigation {
+      display: flex;
+      position: absolute;
+      left: 120px;
+      //margin-left: 120px;
+      .explore,
+      .store {
+        margin: 0;
+      }
+
+      .store {
+        margin-left: 60px;
+      }
+    }
+    .logo {
+      position: absolute;
+      display: block;
+      left: 50%;
+      height: 30px;
+      //transform: translateX(-50%);
+    }
+    .socialMedia {
+      width: 140px;
+      display: flex;
+      justify-content: space-between;
+      img {
+        width: 20px;
+      }
+    }
+  }
+}
+
+@keyframes slideIn {
+  from {
+    top: -40px;
+    opacity: 0;
+  }
+  to {
+    top: 40px;
+    opacity: 1;
+  }
+}

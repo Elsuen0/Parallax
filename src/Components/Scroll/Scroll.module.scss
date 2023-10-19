@@ -1,0 +1,28 @@
+.scroll {
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  z-index: 3;
+  width: 30px;
+  animation: slideIn 1s ease forwards;
+  .contentScroll {
+    display: flex;
+    flex-direction: column;
+    transform: translateX(-50%);
+    .text {
+      transform: rotate(90deg);
+      margin-bottom: 25px;
+    }
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(160%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

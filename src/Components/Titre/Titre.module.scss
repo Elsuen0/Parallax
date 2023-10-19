@@ -1,0 +1,33 @@
+@import url("https://fonts.cdnfonts.com/css/bebas-kai");
+
+.textContainer {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  z-index: 3;
+  opacity: 0;
+  animation: slideIn 1s ease forwards;
+  color: white;
+  h1 {
+    font-family: "Bebas Kai", sans-serif;
+    font-size: 65px;
+    margin-bottom: 10px;
+  }
+  h2 {
+    font-family: "Avenir LT Std", sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    margin: 0;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    top: 35%;
+    opacity: 0;
+  }
+  to {
+    top: 40%;
+    opacity: 1;
+  }
+}
