@@ -1,10 +1,12 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import styles from "./Test.module.scss";
 
 const Test = () => {
-  const testRef = useRef();
-
-  return <div className={styles.container} id="test" ref={testRef}></div>;
+  return (
+    <div className={styles.container}>
+      <div id="testDiv">{/* Contenu de votre div ici */}</div>
+    </div>
+  );
 };
 
 export default Test;
