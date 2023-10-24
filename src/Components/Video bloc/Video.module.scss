@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
 .container {
   width: 60%;
   height: 80%;
@@ -7,6 +9,7 @@
   top: -10%;
   transform: translateX(-50%);
   z-index: 10;
+
   .titleContainer {
     position: absolute;
     top: -40%;
@@ -29,6 +32,7 @@
     height: 100%;
     //border: 2px solid green;
     z-index: 11;
+    box-shadow: 0px 0px 30px 50px rgba(0, 0, 0, 0.5);
   }
   img {
     width: 100%;
@@ -45,13 +49,20 @@
     z-index: 12;
   }
   .textBackground {
-    font-size: 300px;
+    font-size: 500px;
     height: 100%;
     margin: 0;
     position: absolute;
     top: 0;
+    right: -300px;
+    font-family: "Bebas Neue", sans-serif;
     p {
       margin: 0;
+      height: 100%;
+      display: flex;
+      position: relative;
+      z-index: -1;
+      align-items: center;
     }
   }
 }
