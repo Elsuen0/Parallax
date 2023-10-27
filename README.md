@@ -4,7 +4,7 @@
 
 Ce projet est une démonstration d'une page web Parallax conçue avec React, Vite, Rellax et AOS. La parallaxe est une technique de conception qui crée une illusion de profondeur en faisant bouger les éléments du site web à des vitesses différentes lorsque l'utilisateur fait défiler la page. Ce projet combine des technologies front-end populaires pour créer une expérience visuelle immersive.
 
-Le site est actuellement accessible via [Parallax Nepal]().
+Le site est actuellement accessible via [Parallax Nepal](https://parallaxnepal.netlify.app).
 
 ## Technologies utilisées
 
