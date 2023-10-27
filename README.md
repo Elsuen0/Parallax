@@ -39,7 +39,7 @@ git clone https://github.com/Elsuen0/Parallax
 2. Accédez au répertoire du projet :
 
 ````bash
-cd parallax-react-vite
+cd Parallax
 ````
 
 ## Utilisation 
